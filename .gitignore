@@ -5,5 +5,5 @@
 npm-dubug.log*
 yarn-dubug.log*
 yarn-error.log*
-
+dev.js
 .vscode

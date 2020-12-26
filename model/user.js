@@ -6,7 +6,7 @@ const userSchema=mongoose.Schema({
     },
     email:{
         type:String,
-        trim:true,,
+        trim:true,
         unique:true
     },
     password:{
@@ -14,7 +14,7 @@ const userSchema=mongoose.Schema({
         minlength:5,
     },
     lastname:{
-        type:string,
+        type:String,
         maxlength:50
     },
     role:{
@@ -22,11 +22,11 @@ const userSchema=mongoose.Schema({
         default:0
     },
     token:{
-        type:string
+        type:String
     },
     tokenExp:{
         type:Number
     }
 })
-const User=mongoose.model(User,userSchema)
+const User=mongoose.model('User',userSchema)
 module.exports={User}
