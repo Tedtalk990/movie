@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "node":"14.4.0",
+  "npm":"6.14.9"
   "scripts": {
     "start": "nodemon server/index.js"
   },

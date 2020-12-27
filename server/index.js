@@ -60,4 +60,7 @@ app.get('/api/users/logout',auth,(req,res)=>{
         return res.status(200).send({success:true})
     })
 })
-app.listen(3000)
+const port=process.env.PORT || 3000
+app.listen(port,()=>{
+    console.log(`Server is up and running on port ${port}`)
+})
